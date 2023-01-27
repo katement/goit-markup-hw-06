@@ -207,6 +207,7 @@
         </li>
     </ul></div>
 </section>
+<!-- CUSTOMERS -->
 <section class="section ">
     <div class="container customers">
         <h2 class="main-heading-2">Customers</h2>
@@ -291,35 +292,63 @@
     </a></li>
 
 </ul></div>
+
+<div class="subscribe-block">
+<p class="footer-social-paragraph">Subscribe</p>
+ <label class="subscibe-label" for="email">Email</label>
+<input  class="subscribe-input" type="email" name="" id="email">
+</div></div>
 </div>
 
 </footer>
+<!-- MODAL -->
 <div class="backdrop is-hidden" data-backdrop>
     <div class="modal">
         <button data-close-modal class="close-button">
-            <svg class="" width="8px" height="8px"> <use href="./images/close-black-18dp.svg"></use>
-                 </svg>
+            <svg class="" width="8px" height="8px"> <use href="./images/close-black-18dp.svg"></use></svg>
         </button> 
+
+        <!-- FORM -->
         <p class="form-text">Leave your contacts and we will call you back</p>
        
-       <form class="js-speaker-form"> 
-        <label for="name">Name</label>
-    <input type="text" name="" id="name">
-
-    <label for="phone">Phone</label>
-    <input type="tel" name="" id="phone">
-
-    <label for="email">Email</label>
-    <input type="email" name="" id="email">
-        <button type="submit">Send</button>
-        <label for="comment">Comment</label>
-        <textarea name="comment" rows="5" placeholder="Text input"></textarea>
-    <input type="checkbox" name="" value="" id="">
-    <label for="">I accept the terms and conditions of the Privacy Policy</label>
-    </form>
+       <form class="form js-client-form"> 
+       <div class="form-field">
+         <label class="form-label" for="name">Name</label>
+         
+    <input class="form-input" type="text" name="name" id="name">
+       <svg class="form-icon" width="18" height="24">
+                        <use href="./images/form-icons.svg#icon-person"></use></svg>
+                    </div>
+  <div class="form-field">
+    <label class="form-label" for="phone">Phone</label>
+    <input class="form-input" type="tel" name="" id="phone"> 
+    <svg class="form-icon" width="18" height="24">
+        <use href="./images/form-icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+  <div class="form-field">
+    <label class="form-label" for="email">Email</label>
+   
+    <input  class="form-input" type="email" name="" id="email">  <svg class="form-icon" width="18" height="24">
+                        <use href="./images/form-icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+       
+         <div class="form-field">
+            <label class="form-label" for="comment">Comment</label>
+        <textarea class="comment" name="comment" rows="10" placeholder="Text input"></textarea>
+    </div> 
+    <div class="form-checkbox">
+   <label class="form-checkbox-label" for="privacy">
+   <input class="form-checkbox-input" type="checkbox" name="privacy" value="privacy" id="privacy"/>
+ <span class="checkbox-icon"></span>   I accept the terms and conditions of the <a class="form-checkbox-link" href="">Privacy Policy</a></label></div>
+ <button class="submit-btn" type="submit">Send</button>    
+</form>
        
     </div>
 </div>
+
+<!-- SCRIPT -->
 <script>
     const refs={
         openModalBtn: document.querySelector("[data-open-modal]"),
