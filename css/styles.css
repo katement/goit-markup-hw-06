@@ -429,6 +429,7 @@ a {
 }
 .social-block {
 	margin-left: 120px;
+	margin-right: 80px;
 }
 .footer-social-paragraph {
 	font-weight: 500;
@@ -466,12 +467,16 @@ a {
 	display: block;
 	margin-left: 192px;
 }
+.subscribe-items {
+	display: flex;
+	margin-top: 16px;
+}
 .subscibe-label {
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 24px;
-	display: flex;
-	align-items: center;
+	padding: 8px 16px;
+	position: absolute;
 	letter-spacing: 0.04em;
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -481,6 +486,35 @@ a {
 	border-radius: 4px;
 	width: 264px;
 	height: 40px;
+	position: relative;
+	background-color: transparent;
+	margin-right: 24px;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.subscribe-submit-btn {
+	background: #4d5ae5;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--white);
+	align-items: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.plane {
+	color: var(--white);
+	background-image: url(../images/plane.svg);
+	width: 24px;
+	height: 24px;
+	margin-left: 16px;
 }
 
 /* PORTFOLIO */
