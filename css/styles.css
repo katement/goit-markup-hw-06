@@ -657,8 +657,8 @@ a {
 	transform: translate(-50%, -50%) scale(0.9);
 }
 .modal {
-	min-width: 408px;
-	min-height: 576px;
+	width: 408px;
+	height: 576px;
 	background-color: #fcfcfc;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -688,6 +688,7 @@ a {
 	background-image: url(../images/close-white.svg);
 	background-color: #404bbf;
 	border-radius: 50%;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FORM */
@@ -732,6 +733,7 @@ a {
 	border-radius: 4px;
 	height: 40px;
 	padding-left: 38px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field label {
 	margin-bottom: 4px;
@@ -758,16 +760,18 @@ a {
 
 input:focus + svg {
 	fill: #404bbf;
-
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:hover,
-.comment:hover,
-.form-input:focus,
-.comment:focus {
-	border: 1px solid #4d5ae5;
+.form-input:focus {
 	border-radius: 4px;
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	outline: transparent;
+}
+.comment:hover,
+.comment:focus {
+	border: 1px solid #404bbf;
+	border-radius: 4px;
+	outline: transparent;
 }
 
 a {
@@ -777,7 +781,7 @@ a {
 	outline: none;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-
+	padding-left: 16px;
 	padding-top: 8px;
 	font-weight: 400;
 	font-size: 12px;
